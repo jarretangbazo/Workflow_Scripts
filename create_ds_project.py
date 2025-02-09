@@ -25,11 +25,11 @@ def create_project_structure(project_name):
     subdirs = [
         'data/raw', 
         'data/clean',
-        'code/R',
-        'code/Python',
+        'code',
         'notebooks',
         'reports',
-        'models'
+        'models',
+        'logs'
         ]
     for subdir in subdirs:
         os.makedirs(os.path.join(base_dir, subdir), exist_ok=True)
